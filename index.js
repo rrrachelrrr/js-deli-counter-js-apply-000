@@ -1,8 +1,8 @@
-function takeANumber(lineArray, name){
-  lineArray.push(name);
-  return `Welcome, ${name}. You are number ${lineArray.length} in line.`
+// function takeANumber(lineArray, name){
+//   lineArray.push(name);
+//   return `Welcome, ${name}. You are number ${lineArray.length} in line.`
   
-}
+// }
 
 function nowServing(lineArray){
   if (lineArray.length === 0){
@@ -23,5 +23,11 @@ function currentLine(lineArray){
       waitArray.push(` ${i+1}. ${lineArray[i]}`);
    }
    return 'The line is currently:' + waitArray
+  
+}
+let counter = 0;
+function takeANumber(lineArray){
+  counter++;
+  return `Welcome. You are number ${counter} in line.`
   
 }
